@@ -15,13 +15,14 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 @Path("/")
 public class DiscoveryResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Map<String, Object> discovery() {
+    public Response discovery() {
         Map<String, Object> response = new HashMap<>();
         Map<String, String> resources = new HashMap<>();
 
@@ -32,6 +33,6 @@ public class DiscoveryResource {
         response.put("contact", "w1908599@westminster.ac.uk");
         response.put("resources", resources);
 
-        return response;
+        return Response.ok(response).build();
     }
 }
