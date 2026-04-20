@@ -1,0 +1,9 @@
+# Maven
+target/
+
+# NetBeans
+nbproject/private/
+
+# Java
+*.class
+*.log
