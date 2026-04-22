@@ -9,7 +9,27 @@ To conclude, the JAX-RS API is designed clearly and functionally.
 
 # STEP BY STEP INSTRUCTIONS FOR HOW TO BUILD PROJECT AND LAUNCH SERVER 
 
-1. First
+1. First Downlaod the Project and Extact the contents of the zipped file into a foldler
+
+2. Open the project in NetBeans
+
+3. To launch the server head over to the services tab next to where the prjoect has opened up and right click on servers to add a server.
+
+4. Choose Apache Tomcat or TomEE as the Server
+
+5. Locate the apache-tomcat-9.0.100 folder within the Project and set it as the Server Location
+
+6. Set an appropriate username and password and click finish to set up the server
+
+7. Go back to the Services tab and locate the newly Created Apache Tomacat Server right click it and press start
+
+8. Enter your previously made username and password to launch the server. Once the server is running a green play symbol should appear next to the Apache Tomcat Server Icon.
+
+9. Once the server is up and running, go back over to the projects tab, right click the project and press clean and build to compile the project and ensure its ready to be run on the server
+
+10. Finally Right click the project and press run - now you're ready to send Requests!!!
+
+     
 
 
 
