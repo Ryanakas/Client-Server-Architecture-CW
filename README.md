@@ -32,28 +32,34 @@ To conclude, the JAX-RS API is designed clearly and functionally.
 # Sample Curl Requests:
 
 1: Post Room: 
+ 
  curl.exe --% -X POST http://localhost:8080/w1908599SmartCampusCW/api/v1/rooms -H "Content-Type: application/json" -d "{\"id\":\"LIB-307\",\"name\":\"Library Room 307\",\"capacity\":50}"
+ 
  curl.exe --% -X POST http://localhost:8080/w1908599SmartCampusCW/api/v1/rooms -H "Content-Type: application/json" -d "{\"id\":\"ROOM-101\",\"name\":\"Study Room 101\",\"capacity\":55}"
  
  Output: Room Created
 
 2: Get rooms: 
+
  curl.exe --% -X GET http://localhost:8080/w1908599SmartCampusCW/api/v1/rooms
 
  Output :[{"id":"LIB-307","name":"Library Room 307","capacity":50,"sensorIds":[]},{"id":"ROOM-101","name":"Study Room 101","capacity":55,"sensorIds":[]}]
 
 3: Get specific room: 
+
  curl.exe --% -X GET http://localhost:8080/w1908599SmartCampusCW/api/v1/rooms/LIB-307
  
  Output: {"id":"LIB-307","name":"Library Room 307","capacity":50,"sensorIds":[]}
 
 4: Post Sensor: 
+
  curl.exe --% -X POST http://localhost:8080/w1908599SmartCampusCW/api/v1/sensors -H "Content-Type: application/json" -d "{\"id\":\"TEMP-002\",\"type\":\"Temperature\",\"status\":\"ACTIVE\",\"currentValue\":21.5,\"roomId\":\"ROOM-101\"}"
  
  Output: Sensor Created 
 
 5: Return Sensors:
-  curl.exe --% -X GET http://localhost:8080/w1908599SmartCampusCW/api/v1/sensors
+
+ curl.exe --% -X GET http://localhost:8080/w1908599SmartCampusCW/api/v1/sensors
  
  Output: [{"id":"TEMP-002","type":"Temperature","status":"ACTIVE","currentValue":21.5,"roomId":"ROOM-101"}]
 
