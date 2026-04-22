@@ -1,1 +1,4 @@
-target/
+tomcat/logs/
+tomcat/temp/
+tomcat/work/
+*.log
